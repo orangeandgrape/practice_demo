@@ -1,0 +1,18 @@
+
+.controls>a{
+    text-decoration: none;
+    display: block;
+    padding-top: 3px;
+}
+.btn-xlarge{
+    height: 24px;
+    margin-left: 10px;
+    padding:4px 10px;
+    font-size: 12px;
+    line-height: 16px;
+}
+.table-condensed{
+   position: absolute;
+    top:435px;
+    left: 380px;
+}

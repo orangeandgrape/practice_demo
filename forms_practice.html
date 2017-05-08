@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>练习表单</title>
+    <link href="http://g.alicdn.com/sj/dpl/1.5.1/css/sui.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/forms1.css">
+
+</head>
+<body>
+<div class="sui-container">
+    <ul class="sui-breadcrumb">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">服务详情</a></li>
+        <li class="active">订购服务</li>
+    </ul>
+    <div class="sui-steps steps-auto">
+        <div class="wrap">
+            <div class="finished">
+                <label><span class="round"><i class="sui-icon icon-pc-right"></i></span><span>第一步 </span></label><i
+                    class="triangle-right-bg"></i><i class="triangle-right"></i>
+            </div>
+        </div>
+        <div class="wrap">
+            <div class="current">
+                <label><span class="round">2</span><span>第二步 </span></label><i class="triangle-right-bg"></i><i
+                    class="triangle-right"></i>
+            </div>
+        </div>
+        <div class="wrap">
+            <div class="current">
+                <label><span class="round">3</span><span>第三步</span></label><i class="triangle-right-bg"></i><i
+                    class="triangle-right"></i>
+            </div>
+        </div>
+        <div class="wrap">
+            <div class="current">
+                <label><span class="round">4</span><span>第四步</span></label><i class="triangle-right-bg"></i><i
+                    class="triangle-right"></i>
+            </div>
+        </div>
+        <div class="wrap">
+            <div class="todo">
+                <label><span class="round">5</span><span>第五步</span></label>
+            </div>
+        </div>
+    </div>
+    <div class="sui-msg msg-tips msg-block remember" id="msg-remember-demo">
+        <div class="msg-con">提示信息提示重要信息等
+            <button type="button" data-dismiss="msgs" class="sui-close">×</button>
+        </div>
+        <s class="msg-icon"></s>
+    </div>
+    <p><a id="show-msg" href="javascript: void(0);" class="sui-btn btn-primary">刷新之后点我显示消息</a></p>
+    <!--表单-->
+    <form action="" method="post" class="sui-form form-horizontal">
+        <div class="control-group">
+            <label class="control-label">服务名称：</label>
+            <div class="controls">
+                <a href="javascript:void(0)">爱福窝产品建模580元</a>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">链接：</label>
+            <input type="text" class="input-xlarge">
+            <a href="javascript:void(0);" class="sui-btn btn-xlarge">获取商品信息</a>
+        </div>
+        <div class="control-group">
+            <label class="control-label">SKU：</label>
+            <div class="controls">
+                <span>16887894561449</span>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">材质：</label>
+            <div class="controls">
+                <input type="text" class="input-xlarge">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">风格：</label>
+            <div class="controls">
+                <select  class="input-xlarge">
+                    <option >风格1</option>
+                    <option >风格2</option>
+                    <option >风格3</option>
+                </select>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">类目：</label>
+            <div class="controls">
+                <select  class="input-medium">
+                    <option >一级类目</option>
+                    <option >一级类目2</option>
+                    <option >一级类目3</option>
+                </select>
+            </div>
+            <div class="controls">
+                <select  class="input-medium">
+                    <option >二级类目</option>
+                    <option >二级类目2</option>
+                    <option >二级类目3</option>
+                    <option >二级类目4</option>
+                </select>
+            </div>
+            <div class="controls">
+                <select  class="input-medium">
+                    <option >三级类目</option>
+                    <option >三级类目2</option>
+                    <option >三级类目3</option>
+                </select>
+            </div>
+        </div>
+        <div class="timeShow">
+            <div data-toggle="datepicker" class="control-group input-daterange">
+                <label class="control-label">时间选择：</label>
+                <div class="controls">
+                    <input type="text" class="input-medium input-date"><span>-</span>
+                    <input type="text" class="input-medium input-date">
+                </div>
+            </div>
+        </div>
+
+    </form>
+    <form class="sui-form form-horizontal sui-validate">
+        <div class="control-group">
+            <label for="inputEmail" class="control-label">邮箱：</label>
+            <div class="controls">
+                <input type="text" id="inputEmail" name="name" placeholder="邮箱" data-rules="required|email">
+            </div>
+        </div>
+        <div class="control-group">
+            <label for="inputPassword" class="control-label">密码：</label>
+            <div class="controls">
+                <input type="password" id="inputPassword" name="password" placeholder="密码" data-rules="required" title="密码">
+            </div>
+        </div>
+        <div class="control-group">
+            <label for="inputRepassword" class="control-label">重复密码：</label>
+            <div class="controls">
+                <input type="password" id="inputRepassword" name="repassword" placeholder="重复密码" data-rules="required|match=password">
+            </div>
+        </div>
+        <div class="control-group">
+            <label for="inputGender" class="control-label">性别：</label>
+            <div class="controls">
+                <label data-toggle="radio" class="radio-pretty inline">
+                    <input type="radio" name="gender" value="1" data-rules="required"><span>男</span>
+                </label>
+                <label data-toggle="radio" class="radio-pretty inline">
+                    <input type="radio" name="gender" value="2" data-rules="required"><span>女</span>
+                </label>
+            </div>
+        </div>
+        <div class="control-group">
+            <label for="inputPassword" class="control-label">年龄：</label>
+            <div class="controls">
+                <input type="text" id="inputPassword" name="age" placeholder="整数，需要小于100" data-rules="required|number|lt=100" title="年龄">
+            </div>
+        </div>
+        <div class="control-group">
+            <label for="inputGender" class="control-label">地址：</label>
+            <div class="controls"><span class="sui-dropdown dropdown-bordered select"><span class="dropdown-inner"><a role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+            <input name="city" type="hidden" data-rules="required"><i class="caret"></i><span>请选择</span></a>
+          <ul id="menu4" role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="bj">北京</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="sb">圣彼得堡</a></li>
+          </ul></span></span></div>
+        </div>
+        <div class="control-group">
+            <label for="inputDes" class="control-label v-top">自我介绍：</label>
+            <div class="controls">
+                <textarea id="inputDes" name="des" placeholder="自我介绍" data-rules="required"></textarea>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label"></label>
+            <div class="controls">
+                <button type="submit" class="sui-btn btn-primary">立即注册</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script type="text/javascript" src="http://g.alicdn.com/sj/lib/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="http://g.alicdn.com/sj/dpl/1.5.1/js/sui.min.js"></script>
+<script src="js/forms1.js"></script>
+</body>
+</html>
